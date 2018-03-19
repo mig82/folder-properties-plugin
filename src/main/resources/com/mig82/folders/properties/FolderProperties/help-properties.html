@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help for folder properties</title>
+</head>
+<body>
+    Make all of these properties available to the jobs contained within this folder or its sub-folders.
+    <br>
+    In structures where two or more folders are nested, any property defined for a folder will be overridden by any
+    other property of the same name defined by one of its sub-folders.
+    <br>
+    Freestyle jobs must opt into inheriting these properties by selecting the <em>Folder Properties</em> build wrapper
+    from the <em>Build Environment</em> section of their configuration page.
+    <br>
+    Pipeline jobs can use step <em>withFolderProperties</em> to access them.
+</body>
+</html>
