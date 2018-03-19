@@ -3,6 +3,10 @@
 A Jenkins plugin which allows users with config permission to define properties for a folder which can then be used by
 any jobs contained within it or any of its sub-folders.
 
+The aim here is to remove the need to specify the same properties over and over again for all the jobs inside a folder.
+
+In structures where two or more folders are nested, any property defined for a folder will be overridden by any other property of the same name defined by one of its sub-folders.
+
 ## Develop
 
 For ease of development I've added a `logging.properties` file that can be used by specifying it as an option to the
