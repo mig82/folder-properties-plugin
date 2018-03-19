@@ -33,7 +33,7 @@ configuration page in order to be able to access these properties as they would 
 Pipeline jobs can use step `withFolderProperties` to access them:
 
     withFolderProperties{
-        echo("Test 3: ${env.FOO}")
+        echo("Foo: ${env.FOO}")
     }
 
 Jenkins deployments using some of the older versions of the
@@ -41,7 +41,7 @@ Jenkins deployments using some of the older versions of the
 
 
     wrap([$class: 'ParentFolderBuildWrapper']) {
-        echo("Test 2: ${env.FOO}")
+        echo("Foo: ${env.FOO}")
     }
 
 
