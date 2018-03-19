@@ -3,6 +3,21 @@
 A Jenkins plugin which allows users with config permission to define properties for a folder which can then be used by
 any jobs contained within it or any of its sub-folders.
 
+## Develop
+
+For ease of development I've added a `logging.properties` file that can be used by specifying it as an option to the
+Maven `hpi:run` target like so:
+
+    mvn hpi:run -Djava.util.logging.config.file=logging.properties
+
+## Package
+
+Since this is my first version of this and I'm still missing the tests...
+
+    mvn package -DskipTests=true
+
+## Use
+
 In structures where two or more folders are nested, any property defined for a folder will be overridden by any other
 property of the same name defined by one of its sub-folders.
 
@@ -24,5 +39,6 @@ Jenkins deployments using some of the older versions of the
     wrap([$class: 'ParentFolderBuildWrapper']) {
         echo("Test 2: ${env.FOO}")
     }
+
 
 **Author:** Miguelángel Fernández Mendoza.
