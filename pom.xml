@@ -70,6 +70,7 @@
             <groupId>org.jenkins-ci.plugins.workflow</groupId>
             <artifactId>workflow-aggregator</artifactId>
             <version>2.0</version>
+            <scope>test</scope>
         </dependency>
 
         <!--Need this in order to avoid org.apache.maven.plugins.enforcer.RequireUpperBoundDeps failing because
