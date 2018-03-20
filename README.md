@@ -46,3 +46,10 @@ Jenkins deployments using some of the older versions of the
 
 
 **Author:** Miguelángel Fernández Mendoza.
+
+## References
+
+Site: https://mig82.github.io/folder-properties-plugin
+Dependencies: https://mig82.github.io/folder-properties-plugin/doc/dependencies.html
+Javadoc: https://mig82.github.io/folder-properties-plugin/apidocs
+
